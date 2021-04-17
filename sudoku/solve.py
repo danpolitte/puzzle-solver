@@ -1,13 +1,12 @@
-# Solver based on XOR logic
+# solve.py:
 
 import sys
 import math
-from pprint import pprint
 from logic_solver import LogicSolver
 
 
 def sudoku_logic_solver_driver(board, verbose):
-    solver = LogicSolver(board, verbose)
+    solver = LogicSolver(verbose)
     side_length = len(board)
 
     print("Initial Board:")
